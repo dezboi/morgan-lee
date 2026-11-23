@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morgan Lee | Author</title>
+  <meta name="description" content="Official website of author Morgan Lee. Novels, upcoming releases, and news.">
+
+  <!-- Fonts: Playfair Display for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER / NAVIGATION ============ -->
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a href="#home" class="logo">Morgan Lee</a>
+
+      <!-- Mobile menu toggle (works without JavaScript) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span></span>
+      </label>
+
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#books">Books</a></li>
+          <li><a href="#upcoming">Coming Soon</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Author of [Your Genre] Fiction</p>
+        <h1>Morgan Lee</h1>
+        <p class="tagline">Stories about [a short phrase that captures what you write — e.g. "ordinary people facing extraordinary choices"].</p>
+        <div class="hero-buttons">
+          <a href="#books" class="btn btn-primary">Explore the Books</a>
+          <a href="#contact" class="btn btn-ghost">Join the Newsletter</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RELEASED NOVELS ============
+         To add a book: copy one <article class="book-card"> ... </article>
+         block, paste it below the others, and change the details. -->
+    <section id="books" class="section">
+      <div class="container">
+        <h2 class="section-title">Released Novels</h2>
+        <p class="section-intro">Available now in paperback, ebook, and audio.</p>
+
+        <div class="book-grid">
+
+          <article class="book-card">
+            <img src="images/book-1.svg" alt="Cover of Book One by Morgan Lee" loading="lazy">
+            <div class="book-info">
+              <span class="book-meta">Book One &middot; 2024</span>
+              <h3>Book Title One</h3>
+              <p>A two- or three-sentence hook for this novel. Introduce the main character, the problem they face, and what's at stake. Keep it short and intriguing.</p>
+              <a href="#" class="btn btn-small">Buy Now</a>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <img src="images/book-2.svg" alt="Cover of Book Two by Morgan Lee" loading="lazy">
+            <div class="book-info">
+              <span class="book-meta">Book Two &middot; 2025</span>
+              <h3>Book Title Two</h3>
+              <p>A two- or three-sentence hook for this novel. Introduce the main character, the problem they face, and what's at stake. Keep it short and intriguing.</p>
+              <a href="#" class="btn btn-small">Buy Now</a>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <img src="images/book-3.svg" alt="Cover of Book Three by Morgan Lee" loading="lazy">
+            <div class="book-info">
+              <span class="book-meta">Standalone &middot; 2026</span>
+              <h3>Book Title Three</h3>
+              <p>A two- or three-sentence hook for this novel. Introduce the main character, the problem they face, and what's at stake. Keep it short and intriguing.</p>
+              <a href="#" class="btn btn-small">Buy Now</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UPCOMING NOVELS ============ -->
+    <section id="upcoming" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Coming Soon</h2>
+        <p class="section-intro">New stories on the way.</p>
+
+        <div class="upcoming-list">
+
+          <article class="upcoming-card">
+            <img src="images/upcoming-1.svg" alt="Cover of an upcoming novel by Morgan Lee" loading="lazy">
+            <div class="upcoming-info">
+              <span class="badge">Spring 2027</span>
+              <h3>Upcoming Title One</h3>
+              <p>A teaser for your next book. Share just enough to build excitement without giving too much away.</p>
+              <a href="#" class="btn btn-small">Pre-order</a>
+            </div>
+          </article>
+
+          <article class="upcoming-card">
+            <img src="images/upcoming-2.svg" alt="Cover of an upcoming novel by Morgan Lee" loading="lazy">
+            <div class="upcoming-info">
+              <span class="badge badge-muted">In Progress</span>
+              <h3>Untitled Project</h3>
+              <p>A line or two about what you're writing now. Readers love a peek behind the curtain.</p>
+              <a href="#contact" class="btn btn-small btn-outline">Get Updates</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT / BIO ============ -->
+    <section id="about" class="section">
+      <div class="container about">
+        <img src="images/author.svg" alt="Portrait of Morgan Lee" class="about-photo" loading="lazy">
+        <div class="about-text">
+          <h2 class="section-title">About Morgan</h2>
+          <p>Morgan Lee is the author of [number] novels of [genre]. This is placeholder text for your bio. Mention where you live, what draws you to the stories you tell, and anything that makes you memorable to readers.</p>
+          <p>A second short paragraph can cover awards, background, or a personal touch: a favorite place to write, a pet, or a strong opinion about coffee.</p>
+          <ul class="social-links">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Goodreads</a></li>
+            <li><a href="#">Amazon</a></li>
+            <li><a href="#">BookBub</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWS / EVENTS ============ -->
+    <section id="news" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">News &amp; Events</h2>
+        <div class="news-grid">
+          <article class="news-item">
+            <time datetime="2026-12-01">December 1, 2026</time>
+            <h3>Cover Reveal</h3>
+            <p>Placeholder news item. Announce a cover reveal, a giveaway, or a milestone.</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2027-01-15">January 15, 2027</time>
+            <h3>Book Signing</h3>
+            <p>Placeholder event. List the venue, city, and time for a signing or reading.</p>
+          </article>
+          <article class="news-item">
+            <time datetime="2027-02-10">February 10, 2027</time>
+            <h3>Podcast Interview</h3>
+            <p>Placeholder news item. Link to an interview, a guest post, or a review.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEWSLETTER / CONTACT ============ -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <h2 class="section-title">Stay in Touch</h2>
+        <p class="section-intro">Get release news, bonus scenes, and the occasional behind-the-scenes note.</p>
+        <!-- Replace "#" with your newsletter signup link (e.g. Mailchimp, MailerLite, Substack) -->
+        <a href="#" class="btn btn-primary">Join the Newsletter</a>
+        <p class="contact-email">For rights, events, and media: <a href="mailto:hello@example.com">hello@example.com</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Morgan Lee. All rights reserved.</p>
+      <a href="#home" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+</body>
+</html>
