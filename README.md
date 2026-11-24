@@ -14,11 +14,9 @@ images/           ← book covers and author photo
 
 **Text:** open `index.html` in any text editor and replace the placeholder text. Each section is labeled with a comment like `<!-- ============ ABOUT / BIO ============ -->`.
 
-**Book covers and photo:** put your images in `images/`. Then either:
-- name them the same as the placeholders (`book-1.jpg` etc.) and update the `src="images/book-1.svg"` line to the new file extension, or
-- change the `src` to whatever filename you used.
+**Book covers and photo:** put your images in `images/`, then change the matching `src="images/..."` in `index.html` to the new filename. Resize very large images first (about 700–900 px wide is plenty) so the page loads quickly.
 
-Covers look best at a **2:3 ratio** (for example 800×1200 px). The author photo looks best square.
+Lifehacker covers are 2:3 and Karkum covers are 3:4; each section's cards are set to match. The author photo is portrait (4:5).
 
 **Add a book:** in `index.html`, copy an entire `<article class="book-card"> … </article>` block, paste it after the last one, and edit it. The grid rearranges itself automatically. Upcoming books work the same way with `<article class="upcoming-card">`.
 
