@@ -256,6 +256,28 @@ h1, h2, h3 {
 }
 .book-info h3 { font-size: 1.4rem; margin-top: 0.3em; }
 
+/* Hook line + expandable blurb */
+.book-info .book-hook {
+  flex: 0 0 auto;
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--violet-800);
+  margin: 0 0 0.75rem;
+}
+.book-blurb { flex: 1; margin-bottom: 1rem; }
+.book-blurb summary {
+  cursor: pointer;
+  color: var(--violet-600);
+  font-weight: 600;
+  font-size: 0.9rem;
+  list-style: none;
+}
+.book-blurb summary::-webkit-details-marker { display: none; }
+.book-blurb summary::after { content: " +"; }
+.book-blurb[open] summary::after { content: " \2212"; }
+.book-blurb p { margin: 0.75em 0 0; }
+
 /* ---------- Upcoming Books ---------- */
 .upcoming-list {
   display: grid;
