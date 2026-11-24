@@ -48,7 +48,7 @@
         <p class="tagline">Second lives, buried secrets, and the price of both.</p>
         <div class="hero-buttons">
           <a href="#books" class="btn btn-primary">Explore the Books</a>
-          <a href="#contact" class="btn btn-ghost">Join the Newsletter</a>
+          <a href="#newsletter" class="btn btn-ghost">Join the Newsletter</a>
         </div>
       </div>
     </section>
@@ -206,8 +206,14 @@
       <div class="container contact-inner">
         <h2 class="section-title">Stay in Touch</h2>
         <p class="section-intro">Get release news, bonus scenes, and the occasional behind-the-scenes note.</p>
-        <!-- Replace "#" with your newsletter signup link (e.g. Mailchimp, MailerLite, Substack) -->
-        <a href="#" class="btn btn-primary">Join the Newsletter</a>
+        <!-- NEWSLETTER SIGNUP (Kit form 10237180)
+             Posts straight to Kit; no JavaScript needed. After signing up, readers
+             see the confirmation page set in your Kit form settings. -->
+        <form id="newsletter" class="newsletter-form" action="https://app.kit.com/forms/10237180/subscriptions" method="post">
+          <label for="nl-email" class="visually-hidden">Email address</label>
+          <input type="email" id="nl-email" name="email_address" placeholder="Your email address" autocomplete="email" required>
+          <button type="submit" class="btn btn-primary">Join the Newsletter</button>
+        </form>
 
         <!-- CONTACT FORM
              Submissions go through Web3Forms (web3forms.com), which forwards them
