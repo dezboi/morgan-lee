@@ -91,6 +91,12 @@ h1, h2, h3 {
   background: var(--gradient);
   color: var(--white);
 }
+.btn-disabled {
+  background: #e0e7ff;
+  color: var(--violet-800);
+  cursor: default;
+}
+.btn-disabled:hover { transform: none; }
 .btn-outline {
   background: transparent;
   color: var(--violet-600);
@@ -256,6 +262,8 @@ h1, h2, h3 {
 }
 .book-info h3 { font-size: 1.4rem; margin-top: 0.3em; }
 
+.book-info .badge { align-self: flex-start; margin-bottom: 0.9rem; }
+
 /* Hook line + expandable blurb */
 .book-info .book-hook {
   flex: 0 0 auto;
@@ -278,30 +286,7 @@ h1, h2, h3 {
 .book-blurb[open] summary::after { content: " \2212"; }
 .book-blurb p { margin: 0.75em 0 0; }
 
-/* ---------- Upcoming Books ---------- */
-.upcoming-list {
-  display: grid;
-  gap: 2rem;
-}
-
-.upcoming-card {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 2rem;
-  align-items: center;
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  box-shadow: var(--shadow);
-}
-.upcoming-card img {
-  border-radius: 8px;
-  aspect-ratio: 2 / 3;
-  object-fit: cover;
-}
-.upcoming-info h3 { font-size: 1.6rem; margin-top: 0.5em; }
-.upcoming-info p { color: var(--text-muted); }
-
+/* ---------- Badges ---------- */
 .badge {
   display: inline-block;
   padding: 0.3em 0.9em;
@@ -318,6 +303,34 @@ h1, h2, h3 {
   color: var(--violet-800);
 }
 
+/* ---------- The Karkum Sequence ---------- */
+.series-banner {
+  background:
+    linear-gradient(180deg, rgba(30, 16, 54, 0.55) 0%, rgba(30, 16, 54, 0.88) 100%),
+    url("../images/karkum-banner.jpg") center 35% / cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 6rem 0 5rem;
+}
+.series-title {
+  font-size: clamp(2.2rem, 6vw, 3.4rem);
+  margin-bottom: 1.2rem;
+}
+.series-blurb {
+  max-width: 640px;
+  margin: 0 auto;
+  color: var(--text-light);
+}
+.series-blurb p { margin: 0 0 1em; }
+.series-blurb .series-lead {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--white);
+}
+/* Karkum covers are 3:4 rather than 2:3 */
+.series-grid .book-card img { aspect-ratio: 3 / 4; }
+
 /* ---------- About ---------- */
 .about {
   display: grid;
@@ -328,32 +341,16 @@ h1, h2, h3 {
 .about-photo {
   border-radius: 50% 50% var(--radius) var(--radius);
   box-shadow: var(--shadow);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
+  object-position: top;
   width: 100%;
+  max-width: 380px;
+  justify-self: center;
 }
 .about-text p { color: var(--text-muted); }
 
-.social-links {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-.social-links a {
-  display: inline-block;
-  padding: 0.4em 1em;
-  border-radius: 999px;
-  background: var(--indigo-50);
-  color: var(--violet-800);
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: background 0.2s, color 0.2s;
-}
-.social-links a:hover { background: var(--violet-600); color: var(--white); }
+
 
 /* ---------- News ---------- */
 .news-grid {
@@ -477,17 +474,12 @@ h1, h2, h3 {
   .hero { padding: 5rem 0 4rem; }
   .section { padding: 3.5rem 0; }
 
-  .upcoming-card {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .upcoming-card img { max-width: 200px; margin: 0 auto; }
-
   .about {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .about-photo { max-width: 280px; margin: 0 auto; }
+  .about-photo { max-width: 300px; margin: 0 auto; }
+  .series-banner { padding: 4.5rem 0 3.5rem; }
 
   .site-footer .container { justify-content: center; text-align: center; }
 }
