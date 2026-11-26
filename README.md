@@ -30,13 +30,10 @@ Covers look best at a **2:3 ratio** (for example 800×1200 px). The author photo
 
 Double-click `index.html` to open it in your browser. After each edit, save the file and refresh the browser.
 
-## Publish with GitHub Pages (free)
+## Live site
 
-1. Make sure the site files are on the `main` branch of `github.com/dezboi/morgan-lee`.
-2. On GitHub, go to the repo's **Settings → Pages**.
-3. Under **Build and deployment**, set Source to **Deploy from a branch**, choose **main** and **/ (root)**, then click **Save**.
-4. After a minute or two the site is live at **https://dezboi.github.io/morgan-lee/**.
+The live website is **https://morgan-lee.org**. It is hosted on Cloudflare Workers as static files (settings in `wrangler.jsonc`).
 
-Each time you push changes to `main`, the live site updates automatically.
+Each time a change is merged into `main`, Cloudflare rebuilds and publishes the site, usually within a minute or two. Pull requests also get a Cloudflare preview build.
 
-**Custom domain (optional):** if you buy a domain such as `morganleebooks.com`, enter it under Settings → Pages → Custom domain and follow GitHub's DNS instructions.
+The old GitHub Pages address (`dezboi.github.io/morgan-lee`) has been retired so search engines only point to morgan-lee.org. Don't turn GitHub Pages back on.
